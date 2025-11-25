@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin:0;
+    padding:0;
+    list-style: none;
+    position: relative;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+    color:white;
+}
+
+img{
+    max-width: 100%;
+}
+
+html{
+    font-size:14px;
+}
+
+body{
+    background-color:white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.navbar::after,
+ul::after,
+.teambox::after,
+.footerbox::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.header{
+    background-image: url("pics/hero-bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 700px;
+    width: 100%;
+    position: relative;
+    z-index: 0;
+}
+
+.navbarbox{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: black;
+}
+
+.navbar{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.navbar *{
+    float:left;
+}
+
+.navbar img{
+    max-height: 40px;
+}
+
+.navbar a{
+    padding: 2rem 1rem 1rem 0rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.navbar a:hover{
+    color:#025add;
+}
+
+.btn{
+    color:white;
+    background-color:#025add;
+    padding:1rem 1.5rem;
+    border-radius:50px;
+    cursor:pointer;
+    display:inline-block;
+}
+
+.btn:hover{
+    background-color:#0c6de0;
+}
+
+.headercontent{
+    position: absolute;
+    top: 50%;
+    right: 8%;
+    transform: translateY(-50%);
+    max-width: 400px;
+    color: white;
+    z-index: 1;
+}
+
+.wrapper{
+    background-color:white;
+}
+
+.headercontent h1{
+    margin-bottom:2rem;
+}
+
+.headercontent h1 span{
+    color:#0c6de0;
+}
+
+.headercontent .socialbox{
+    margin:4rem 0 2rem 0;
+}
+
+.headercontent .socialbox i{
+    color:#0c6de0;
+    padding-right:1.5rem;
+}
+
+.headercontent .socialbox i:hover{
+    color:white;
+}
+
+.btnbox .btn:last-child{
+    margin-left:2rem;
+}
+
+.teamcontent{
+    padding:5rem 0;
+    text-align:center;
+    background-color:white;
+}
+
+.teamcontent h2{
+    margin:5rem 0 1rem 0;
+}
+
+.teamcontent p{
+    color:#b8651d;
+    margin:1rem 0 5rem 0;
+}
+
+.teambox{
+    max-width:1000px;
+    margin:0 auto;
+}
+
+.team{
+    float:left;
+    width:25%;
+}
+
+.team *{
+    color:#0c6de0;
+}
+
+.team .socialbox{
+    margin:1rem;
+}
+
+.team .socialbox i{
+    padding:.5rem;
+}
+
+.team .socialbox i:hover{
+    border:2px solid #0c6de0;
+    border-radius:50%;
+}
+
+.team h3{
+    margin:2rem 0 0rem 0;
+}
+
+.team p{
+    color:black;
+    margin:0;
+}
+
+.footer{
+    background-color:black;
+    padding:5rem 0;
+}
+
+.footerbox{
+    max-width:1000px;
+    margin:0 auto;
+    color:white;
+}
+
+.footerbox div{
+    width:50%;
+    float:left;
+}
+
+.footerbox .contacts{
+    padding-left:6rem;
+}
+
+.footerbox div:first-child{
+   padding-right:6rem;
+}
+
+.footerbox h3{
+    color:#0c6de0;
+    margin-bottom:2rem;
+}
+
+.footerbox p{
+    line-height:2;
+}
+
+.footerbox img{
+    width:40%;
+    margin-bottom:2rem;
+}
+
+.footerbox .socialbox i{
+    padding:.5rem;
+}
+
+.chat{
+    position:fixed;
+    bottom:2rem;
+    right:3rem;
+    z-index:10;
+}
+
+.chat img{
+   border-radius:2rem;
+   width:80px;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .wrapper{
+        max-width: 100%;        
+        margin:0 auto;
+    }
+
+    .header{
+        background: #000;
+        height: auto;
+    }
+
+    .headercontent{
+        position: static;
+        padding: 1rem;
+        background: black;
+        height: auto;
+        max-width: 100%;
+        transform: none;
+    }
+
+    .navbar ul{
+        display: none;
+    }
+    .teamcontent{
+        padding-top: 0;
+    }
+    .teambox{
+        width:95%;
+        margin:0 auto;
+        display: block;
+    }
+    .team{
+        display: block;
+        clear: both;
+        width:100%;
+    }
+}
