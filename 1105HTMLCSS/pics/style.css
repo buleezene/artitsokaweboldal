@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    box-sizing: border-box;
+}
+
+body{
+    background: url('../pics/bg-body.png');
+    background-attachment: fixed;
+}
+
+.header{
+    text-align: center;
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(18, 173, 121);
+    font-size: 24px;
+    margin: 40px 0;
+    padding: 30px 0;
+    background-color: rgba(255, 255, 255, 0.671);
+    border-top: 1px dashed #807676;
+    border-bottom: 1px dashed #807676;
+}
+
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.container::after{
+    content:"";
+    clear:both;
+    display: table;
+}
+
+.menu{
+    width: 15%;
+    float: left;
+    background: url(bg-menu.jpg);
+    background-attachment: fixed;
+    padding-bottom: 500rem;
+    margin-bottom: -500rem;
+}
+
+ul{
+    list-style: none;
+}
+
+.menu ul{
+    margin: 10px;
+}
+
+.menu ul li{
+    border-bottom: 1px dashed rgba(224, 188, 188, 0.329);
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 20px 10px;
+    display: inline-block;
+}
+
+.menu ul li:hover {
+    background-color: rgb(18, 173, 121);
+}
+
+.content{
+    width: 70%;
+    float: left;
+}
+
+
+
+.sidebar{
+    width: 15%;
+    float: right
+}
+
+.lepteto{
+
+}
