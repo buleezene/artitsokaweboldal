@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+html{
+    font-size: 16px;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    background-color: rgba(40, 173, 255, 0.385);
+}
+
+.container{
+    max-width: 1312px;
+    margin: 0 auto; 
+    width: 95%;
+    margin-bottom: 50px;
+
+}
+
+.header{
+    height: 580px;
+    background: url(../img/picture1.jpg);
+    position: relative;
+}
+
+h1{
+    color: white;
+    font-size: 4rem;
+    padding-top: 200px;
+    padding-left: 400px;
+}
+
+.header ul{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(87, 87, 246, 0.502);
+}
+
+.header ul::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.header ul li{
+    width: 20%;
+    float: left;
+    text-align: center;
+}
+
+
+.header ul li a{
+    color:white;
+    padding: 20px;
+    text-transform: uppercase;
+    display: block;
+}
+
+.header ul li a:hover{
+    color: grey;
+    background-color: rgb(87, 87, 246);
+}
+
+.content{
+    background-color: grey;
+    padding: 40px 20px 20px 20px;
+}
+
+.box img{
+    float: left;
+    width: 50%;
+    padding-right: 20px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+}
+
+.box:last-child img{
+    float: right;
+    padding-right: 0;
+    padding-left: 20px;
+}
+
+.box p{
+    line-height: 1.5;
+    text-align: justify;
+    margin-bottom: 40px;
+    color: rgb(0, 0, 0);
+}
+
+.footer{
+    text-align: center;
+    background-color: white;
+    padding: 50px;
+}
